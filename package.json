@@ -9,11 +9,12 @@
     "lint:fix": "prettier --write ."
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "next": "^13.4.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-webcam": "^7.1.1"
   },
   "devDependencies": {
     "prettier": "^2.8.8"
