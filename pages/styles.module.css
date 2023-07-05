@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.camOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 95%;
+  top: 85%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.pictureOptions {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  top: 85%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btnScreenshot {
+  width: 6rem;
+  height: 4rem;
+}
+
+.btnSend {
+  width: 6rem;
+  height: 4rem;
+}
+
+.pictureInPicture {
+  width: 100%;
+}
