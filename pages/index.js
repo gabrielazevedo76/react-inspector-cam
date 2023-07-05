@@ -1,8 +1,9 @@
 import { useState, useRef, useCallback } from "react";
 import Webcam from "react-webcam";
+import axios from "axios";
+
 import { Button } from "@mui/material";
 import styles from "./styles.module.css";
-
 import SendIcon from "@mui/icons-material/Send";
 
 function Home() {
@@ -41,11 +42,9 @@ function Home() {
         {imgSrc && <img className={styles.pictureInPicture} src={imgSrc} />}
         <div className={styles.pictureOptions}>
           <Button
-            color="success"
             onClick={clearCapture}
             variant="contained"
             className={styles.btnSend}
-            endIcon={<SendIcon />}
           >
             Voltar
           </Button>
@@ -54,12 +53,17 @@ function Home() {
             onClick={clearCapture}
             variant="contained"
             className={styles.btnSend}
+            endIcon={<SendIcon />}
           >
             Enviar
           </Button>
         </div>
       </>
     );
+  };
+
+  const sendPic = () => {
+    // TO DO
   };
 
   return (
