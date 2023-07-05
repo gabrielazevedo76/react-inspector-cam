@@ -3,6 +3,8 @@ import Webcam from "react-webcam";
 import { Button } from "@mui/material";
 import styles from "./styles.module.css";
 
+import SendIcon from "@mui/icons-material/Send";
+
 function Home() {
   const webcamRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
@@ -43,6 +45,7 @@ function Home() {
             onClick={clearCapture}
             variant="contained"
             className={styles.btnSend}
+            endIcon={<SendIcon />}
           >
             Voltar
           </Button>
